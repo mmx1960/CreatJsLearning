@@ -5,11 +5,8 @@ var stage = new createjs.Stage("gameView");
 var gameView = new createjs.Container();
 stage.addChild(gameView);
 
-var rect = new createjs.Shape();
-rect.graphics.beginFill("#ff0000");
-rect.graphics.drawRect(0,0,50,50);
-gameView.addChild(rect);
-
+var c = new ChildContainer();
+gameView.addChild(c);
 stage.update();
 
 
